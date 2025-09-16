@@ -6,11 +6,12 @@
 
 <h1>hello world</h1>
 <a href="{%  url ''  %}">home page</a>
+<form method="POST">
 {%  csrf_token  %}
 {{form|crispy}}
 <br>
-<button type="submit">Login</button>
-
+<button type="submit">Login <i class="fa fa-key" aria-hidden="true"></i></button>
+</form>
 
 
 {%  endblock  %}
